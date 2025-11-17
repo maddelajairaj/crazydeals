@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrazyDeals Store – Beauty Products</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #ffe6f2;
+            color: #4a004e;
+        }
+
+        header {
+            background: #ffb3d9;
+            padding: 25px;
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 2px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero img {
+            width: 70%;
+            max-width: 450px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%,100% {transform: translateY(0);}
+            50% {transform: translateY(-10px);}
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 40px;
+            color: #cc0066;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .product-card {
+            background: white;
+            width: 250px;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        footer {
+            background: #ffb3d9;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>CrazyDeals Store ✨</header>
+
+    <div class="hero">
+        <h2>Your One-Stop Beauty Paradise 💖</h2>
+        <img src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=900&q=80" alt="Beauty Banner">
+    </div>
+
+    <h2 class="section-title">🌸 Featured Beauty Products 🌸</h2>
+
+    <div class="products">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=500&q=80" alt="Lipstick">
+            <h3>Soft Matte Lipstick</h3>
+            <p>$12.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1556228453-efd6dcbe8ecf?auto=format&fit=crop&w=500&q=80" alt="Skincare Cream">
+            <h3>Hydrating Glow Cream</h3>
+            <p>$18.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=500&q=80" alt="Perfume">
+            <h3>Floral Perfume Mist</h3>
+            <p>$24.99</p>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=500&q=80" alt="Makeup Palette">
+            <h3>Pastel Glow Palette</h3>
+            <p>$29.99</p>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2025 CrazyDeals Store | Beauty Made Affordable 💗
+    </footer>
+
+</body>
+</html>
