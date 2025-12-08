@@ -23,6 +23,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <style>
     body { font-family: Poppins, sans-serif; text-align: center; padding: 40px; background: #e6f7ff; }
+
+    .form-box {
+        max-width: 400px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        text-align: left;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
     .btn {
         background: #ffc107;
         padding: 12px 18px;
@@ -30,6 +51,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         text-decoration: none;
         font-size: 20px;
         border-radius: 6px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        border: none;
+        cursor: pointer;
     }
 </style>
 </head>
@@ -38,7 +64,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h1>Payment Page</h1>
 <p>Enter your payment information below.</p>
 
-<a href="thankyou.html" class="btn">Complete Payment</a>
+<div class="form-box">
+    <form action="thankyou.html" method="GET">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Product:</label>
+        <input type="text" name="product" required>
+
+        <label>Total:</label>
+        <input type="text" name="total" required>
+
+        <button type="submit" class="btn">Complete Payment</button>
+    </form>
+</div>
 
 </body>
 </html>
